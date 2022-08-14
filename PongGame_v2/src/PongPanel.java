@@ -13,7 +13,7 @@ import javax.swing.JPanel;
  
 public class PongPanel extends JPanel implements ActionListener, KeyListener { //the panel which the game runs in (different from the window)
 	//variables for PongPanel class 
-	private static final Color BACKGROUND_COLOUR = Color.WHITE;
+	private static final Color BACKGROUND_COLOUR = Color.BLACK;
 	private static final int TIMER_DELAY = 5; //ms
 	private static final int BALL_MOVEMENT_SPEED = 2;
 	private static final int POINTS_TO_WIN = 3;
@@ -64,7 +64,7 @@ public class PongPanel extends JPanel implements ActionListener, KeyListener { /
 		Graphics2D g2d = (Graphics2D) g.create();
 		Stroke dashed = new BasicStroke(3, BasicStroke.CAP_BUTT, BasicStroke.JOIN_BEVEL, 0, new float[]{9}, 0);
 	    g2d.setStroke(dashed);
-	    g2d.setPaint(Color.BLACK);
+	    g2d.setPaint(Color.WHITE);
 	    g2d.drawLine(getWidth() / 2, 0, getWidth() / 2, getHeight());
 	    g2d.dispose();
 		
